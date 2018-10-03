@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    tools:context=".DisplayActivity">
+<LinearLayout
+    android:layout_width="match_parent"
+
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+  >
+
+        <LinearLayout
+            android:background="@android:color/holo_green_light"
+            android:id="@+id/rllayout"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_marginTop="25dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:id="@+id/profile"
+                android:src="@drawable/boyinoccent"/>
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Goutham Reddy"
+                android:textColor="#fff"
+                android:id="@+id/name"
+                android:textStyle="bold"
+                android:textSize="21sp"/>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BIO"
+                android:id="@+id/biotxt"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:textSize="21sp"/>
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+                android:id="@+id/email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textSize="15dp"
+                android:layout_gravity="center_horizontal"
+                android:drawablePadding="20dp"
+                android:text="goutham@darkbyte.in"
+                android:textStyle="bold"
+            android:drawableLeft="@drawable/ic_phone_black_24dp"
+
+
+            />
+
+
+
+
+
+            <TextView
+                android:id="@+id/call"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textSize="15dp"
+                android:layout_gravity="center_horizontal"
+                android:drawablePadding="20dp"
+                android:drawableLeft="@drawable/ic_phone_black_24dp"
+                android:text="9882550568                   "
+                android:textStyle="bold" />
+
+
+
+
+            <TextView
+                android:id="@+id/sms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textSize="15dp"
+                android:layout_gravity="center_horizontal"
+                android:drawablePadding="20dp"
+                android:drawableLeft="@drawable/ic_sms_black_24dp"
+                android:text="Ping me through sms"
+                android:textStyle="bold"  />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_height="wrap_content">
+    <Button
+    android:id="@+id/Changebackground"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColor="#fff"
+        android:layout_margin="5dp"
+        android:background="@color/colorPrimary"
+        android:text="Change Background" />
+
+    <Button
+        android:id="@+id/biobutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_margin="5dp"
+        android:textColor="#fff"
+        android:background="@color/colorPrimary"
+        android:text="Bio Button" />
+
+
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>
